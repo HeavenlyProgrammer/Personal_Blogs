@@ -4,59 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body class="bg-gray-50">
-    <div class="flex flex-col">
-        <div class="flex bg-gray-800 justify-center font-serif text-sm border-b-2 border-black">
-            <ul class="my-5">
-                <div class="inline-flex space-x-2 text-white">
-                    <li>Muhammad Farhan Fahrezy</li>
-                    <li>&</li>
-                    <li>Muhammad Afdhal Mukti</li>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class="bg-gray-50 font-sans">
+    <div class="flex flex-col min-h-screen">
+        
+        <header class="bg-gray-800 border-b-2 border-black text-white font-serif shadow-md">
+            <div class="max-w-7xl mx-auto px-4 py-4 md:py-6 text-center">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-1 md:gap-2 text-xs md:text-sm text-gray-300">
+                    <span>Muhammad Farhan Fahrezy</span>
+                    <span class="hidden md:inline">&</span>
+                    <span>Muhammad Afdhal Mukti</span>
                 </div>
+
+                <h1 class="mt-2 md:mt-4 text-3xl md:text-5xl font-bold text-yellow-200 tracking-wider">
+                    About Us
+                </h1>
+            </div>
+        </header>
+
+        <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-center md:justify-around items-center py-3 md:py-4 gap-3 md:gap-8 text-sm md:text-base">
+                    <a class="w-full md:w-auto text-center hover:text-yellow-200 hover:border-b-2 hover:border-green-600 transition-all duration-300 pb-1" href="./index.html">Home</a>
+                    <a class="w-full md:w-auto text-center hover:text-yellow-200 hover:border-b-2 hover:border-green-600 transition-all duration-300 pb-1" href="./segments.html">Seven Segments</a>
+                    <a class="w-full md:w-auto text-center text-yellow-200 border-b-2 border-green-600 pb-1 font-semibold cursor-default" href="#">About Us</a>
+                    <a class="w-full md:w-auto text-center hover:text-yellow-200 hover:border-b-2 hover:border-green-600 transition-all duration-300 pb-1" href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-1 py-12 px-4 md:px-8 bg-gray-50">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl text-center font-bold mb-12 text-gray-800">Meet Our Team</h2>
                 
-                <li class="flex justify-center text-5xl text-yellow-200 pt-2">
-                About Us
-                </li>
-            </ul>
-        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 justify-items-center">
 
-        <div class="bg-gray-900">
-            <nav class="flex justify-around text-white py-4">
-                <a class="hover:border-b-2 hover:border-green-600" href="./index.html" alt="Home">Home</a>
-                <a class="hover:border-b-2 hover:border-green-600" href="./segments.html" alt="Seven Segments">Seven Segments</a>
-                <a class="hover:border-b-2 hover:border-green-600" href="./about.html" alt="About Us">About us</a>
-                <a class="hover:border-b-2 hover:border-green-600" href="./contact.html" alt="Contact us">Contact</a>
-            </nav>
-        </div>
-
-        <div class="py-13 px-4">
-            <h2 class="text-3xl text-center font-bold mb-12">Meet Our Teams</h2>
-            <!-- Grid -->
-             <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                <!-- Team member 1 aing -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="./asset/team-1.png" alt="HERO" class="w-full h-107 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-semibold text-gray-800">Muhammad Farhan Fahrezy</h3>
-                        <p class="text-gray-500">202431166</p>
-                        <p class="text-gray-400">frhn1616@gmail.com</p>
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden w-full max-w-sm border border-gray-100 group">
+                        <div class="overflow-hidden">
+                            <img 
+                                src="./asset/team-1.png" 
+                                alt="Muhammad Farhan Fahrezy" 
+                                class="w-full h-96 md:h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                            >
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Muhammad Farhan Fahrezy</h3>
+                            <p class="text-blue-600 font-medium mb-2">202431166</p>
+                            <div class="w-full h-px bg-gray-200 my-3"></div>
+                            <p class="text-gray-500 text-sm hover:text-blue-500 transition-colors">
+                                frhn1616@gmail.com
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Team member 2 aing -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="./asset/team-2.png" alt="HERO" class="-w-ull h-107 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-semibold text-gray-800">Muhammad Afdhal Mukti</h3>
-                        <p class="text-gray-500">202431100</p>
-                        <p class="text-gray-400">afdhalmukti3@gmail.com</p>
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden w-full max-w-sm border border-gray-100 group">
+                        <div class="overflow-hidden">
+                            <img 
+                                src="./asset/team-2.png" 
+                                alt="Muhammad Afdhal Mukti" 
+                                class="w-full h-96 md:h-[500px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                            >
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Muhammad Afdhal Mukti</h3>
+                            <p class="text-blue-600 font-medium mb-2">202431100</p>
+                            <div class="w-full h-px bg-gray-200 my-3"></div>
+                            <p class="text-gray-500 text-sm hover:text-blue-500 transition-colors">
+                                afdhalmukti3@gmail.com
+                            </p>
+                        </div>
                     </div>
+
                 </div>
-             </div>
-        </div>
+            </div>
+        </main>
+        
+        <footer class="bg-gray-800 text-gray-400 text-center py-6 border-t-2 border-black mt-auto">
+            <p class="text-sm">&copy; 2025 Personal Blogs. Built with Prayers.</p>
+        </footer>
+
     </div>
 </body>
 </html>
