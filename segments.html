@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Seven Segment – Common Anoda & Katoda</title>
+
+    <!-- file CSS terpisah -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="nav-wrap">
+            <div class="logo"><strong><a href="./index.html">Back</a></strong></div>
+            <nav>
+                <ul>
+                   <li></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Panduan Lengkap Seven Segment Display</h1>
+            <p>Memahami perbedaan Common Anoda dan Common Katoda untuk aplikasi mikrokontroler.</p>
+            <a href="#artikel" class="btn-primary">Mulai Baca</a>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="container" id="artikel">
+        
+        <div class="row">
+            <div>
+                <h2>Pengertian Seven Segment Display</h2>
+                <p>Seven segment adalah modul LED indikator digital untuk menampilkan angka 0-9 serta beberapa huruf A-F. Komponen ini terdiri atas tujuh segmen LED berbentuk bar dan satu titik desimal opsional.</p>
+                <p>Dalam rangkaian mikrokontroler, seven segment digunakan karena kemudahan interfacing dan konsumsi daya rendah serta cocok untuk display counter, timer, dan perangkat ukur digital.</p>
+            </div>
+            <div>
+                <img src="asset/Screenshot 2025-12-22 222611.png">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:60px;">
+            <div>
+                <img src="asset/Picture4.png">
+            </div>
+            <div>
+                <h2>Perbedaan Common Anoda dan Common Katoda</h2>
+
+        <p>
+            Seven segment memiliki dua konfigurasi dasar koneksi, yaitu Common Anoda dan Common Katoda. Perbedaan keduanya terletak pada polaritas terminal bersama (common pin) dan cara pengaktifan segmen LED.
+        </p>
+
+            <p>
+                <strong>Common Anoda</strong><br>
+                Pada tipe ini, semua anoda segmen dihubungkan menjadi satu dan diberikan tegangan positif (Vcc). Setiap segmen menyala apabila kaki katodanya diberi logika LOW (0). Dengan kata lain, segmen aktif jika diberi sinyal rendah. Tipe ini cocok digunakan untuk rangkaian atau mikrokontroler yang menggunakan metode sink current.
+                </p>
+
+            <p>
+                  <strong>Common Katoda</strong><br>
+                    Pada konfigurasi ini, semua katoda segmen dihubungkan menjadi satu dan disambungkan ke GND. Setiap segmen menyala apabila kaki anodanya diberi logika HIGH (1). Dengan kata lain, segmen aktif jika diberi sinyal tinggi. Tipe ini banyak digunakan karena kompatibel dengan output mikrokontroler yang biasanya melakukan source current.
+</p>
+
+<p>
+Pemilihan tipe bergantung pada driver dan rancangan rangkaian. Jika output mikrokontroler lebih stabil pada logika HIGH, maka Common Katoda menjadi pilihan. Jika lebih aman menggunakan logika LOW untuk mengaktifkan LED, maka Common Anoda lebih sesuai.
+</p>
+            </div>
+        </div>
+
+        <!-- VIDEO SECTION -->
+        <div class="video-section" id="video">
+            <h2>Video Penjelasan Seven Segment</h2>
+            <p>Lihat visualisasi perbedaan dan contoh rangkaian:</p>
+            <iframe src="https://www.youtube.com/embed/3TUeSr3mXsQ"></iframe>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+        <p>Kontak: <a href="mailto:info@blogelektronika.com">info@blogelektronika.com</a></p>
+        <p>Copyright 2025 Blog Elektronika</p>
+    </footer>
+
+</body>
+</html>
